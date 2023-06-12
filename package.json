@@ -1,0 +1,26 @@
+{
+  "name": "copper",
+  "displayName": "copper",
+  "description": "a dark but colorful theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "scripts": {
+    "build": "npx @vscode/vsce package",
+    "install": "code --install-extension ."
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "copper",
+        "uiTheme": "vs-dark",
+        "path": "./themes/copper-color-theme.json"
+      }
+    ]
+  }
+}

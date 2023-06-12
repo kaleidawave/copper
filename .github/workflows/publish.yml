@@ -1,0 +1,30 @@
+name: Publish
+
+on:
+  workflow_dispatch
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set git credentials
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: Install the vsce npm package
+        run: |
+          npm install
+          npm install -g vsce
+      - name: Publish the extension pack
+        run: |
+          vsce publish -p ${{ secrets.VSCODE_MARKETPLACE_TOKEN }} patch
+      - name: Push back to repo
+        run: |
+          git status
+          git add .
+          git commit -m "Update"
+          git push --tags origin main
+
