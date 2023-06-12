@@ -1,7 +1,7 @@
 {
-  "name": "copper",
+  "name": "copper-theme",
   "displayName": "copper",
-  "description": "a dark but colorful theme",
+  "description": "A dark but colorful theme",
   "version": "0.0.1",
   "license": "MIT",
   "repository": "github:kaleidawave/copper",
