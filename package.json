@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "npx @vscode/vsce package",
-    "install": "code --install-extension ."
+    "install-extension": "code --install-extension ."
   },
   "categories": [
     "Themes"
