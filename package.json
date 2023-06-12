@@ -4,6 +4,7 @@
   "description": "a dark but colorful theme",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": "github:kaleidawave/copper",
   "engines": {
     "vscode": "^1.78.0"
   },
