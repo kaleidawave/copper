@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "repository": "github:kaleidawave/copper",
+  "publisher": "kaleidawave",
   "engines": {
     "vscode": "^1.78.0"
   },

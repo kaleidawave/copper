@@ -23,8 +23,5 @@ jobs:
           vsce publish -p ${{ secrets.VSCODE_MARKETPLACE_TOKEN }} patch
       - name: Push back to repo
         run: |
-          git status
-          git add .
-          git commit -m "Update"
           git push --tags origin main
 
